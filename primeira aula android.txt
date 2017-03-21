@@ -1,0 +1,99 @@
+para introduzir a interface android, é necessario entender dois pontos:
+1- como funciona os aplicativos que criam os apps 
+2- como minimizar as barreiras de emulação do app criado
+
+mas antes vamos conhecer o android, .....
+agora que ja sabemos do que estamos falando vamos ao aplicativo
+um aplicativo tem que seguir um projeto,busquem informação dos 10 passos para se 
+fazer o primeiro app
+entre eles estao: o que o app vai fazer, se mais alguem vai gostar e se vai ter rendimento,
+no projeto voce começa esboçando, as telas e as funcionalidades, vai para a visualização 
+virtual onde ja e possivel clicar num simulador, e finalmente entregar para
+o desenvolvedor, ou seja vc nem precisa ser um programador,
+
+como desenvolver um app
+
+antes do mais temos que providenciar o ambiente de programação
+no computador vc precisa de um IDE
+
+O Android Studio é um novo e totalmente integrado ambiente de desenvolvimento, 
+que foi recentemente lançado pela Google para o sistema operativo Android. 
+Foi desenhado para fornecer novas ferramentas para o desenvolvimento de apps 
+e para fornecer uma alternativa ao Eclipse, atualmente o mais amplamente
+ utilizado,
+apesar da fama do Eclipse recomendo que usem o Android Studio,
+facil de baixar  e usar, 
+fazer uma pesquisa sobre sdk, avd emulador entre outros ajuda a entender,
+ o IDE vai propor sempre a melhor condição para sua programação, e uma ferramenta
+que auxilia no desenvolvimento contribuindo com palavras repetidas e dicas 
+da biblioteca mais adequado ao uso no ato da programação,
+apos abrir o IDE vamos criar um projeto que pode ser padrao do IDE, ou seja vc vai 
+atuar sem saber siquer uma linha de comando,
+no inicio ele vai sugerir e aguardar sua interação
+algumas barreiras acontentecerao porque vc tem que adequar o IDE a um aparelho a um 
+sistema operacional, e  ao sistema do computador, nao obstante essses objetos 
+serem incompativeis.
+na preparação dessa aula eu encontrei algumas barreiras que cito aqui:
+o computador nao tinha capacidade de interagir com os requerimentos dos emuladores de app 
+disponiveis nos sdk, dai tive que baixar um emulador nox para atuar de fora paralela,
+mas simulando um aparelho ligado ao computador por USB
+
+http://en.bignox.com/blog/?p=344
+
+aqui vou apresentar todo o processo contudo vc tem que se dedicar para entender,
+nao é dificil e tem muita gente fazendo isso, contudo é necessario pesquisa e 
+dedicação,
+no IDE abri novo projeto, nomiei como meuapp, e so, o que gerou dois arquivos
+
+MainActivity.java e activity_main.xml da forma que esta, sem minha influencia,
+os codigos abaixo como segue:
+//
+MainActivity.java
+
+package com.example.elismarolimpio.meuapp;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+//
+activity_main.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.elismarolimpio.meuapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+  
+</RelativeLayout>
+
+
+quando mandei rodar ele ja criou o APK arquivo necessario para instalar o app
+
+no dispositivo, nesse caso como esta emulando no nox e ele criou o app na imagem icone do app
+e abriu o app na imagem app android
+
+para  aprender a programar em android ha muitos materiais disponiveis na internet,
+ha comigo uma apostiva que posso disponibilizaar, e ha varios livos dentre eles 
+o do DIETEL que custa uns 80 reais, 
+
+
+//
